@@ -6,6 +6,7 @@ namespace MinimalApi.Infraestrutura.Db;
 public class DbContexto : DbContext
 {
     public DbSet<Administrador> Administradores { get; set; }
+    public DbSet<Veiculo> Veiculos { get; set; }
 
     // CRIANDO O ADMINISTRADOR INICIAL
     protected override void OnModelCreating(ModelBuilder modelBuilder)
